@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a2c4d;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #07213b;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.admin-info {
+  text-align: right;
+}
+
+.admin-info p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background-color: #1e3a5f;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.data-table {
+  width: 95%;
+  margin: 0 auto 40px;
+  background: #fff;
+  color: #1e3a5f;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}

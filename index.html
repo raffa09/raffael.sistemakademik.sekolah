@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login SMK Hangtuah 1 Jakarta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="logo ht.png" alt="Logo SMK" class="logo">
+    <h2>SMK HANGTUAH 1<br>JAKARTA</h2>
+    
+    <div class="login-box">
+      <h3>LOGIN</h3>
+      <form onsubmit="handleLogin(event)">
+        <div class="input-group">
+          <input type="text" placeholder="username" required>
+          <span class="icon">👤</span>
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Password" required>
+          <span class="icon">🔑</span>
+        </div>
+
+        <div class="input-group">
+          <select required>
+            <option value="" disabled selected>Role</option>
+            <option value="siswa">Siswa</option>
+            <option value="guru">Guru</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-login">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script untuk pindah halaman -->
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); // Mencegah reload
+      // Validasi bisa ditambahkan di sini kalau perlu
+      window.location.href = "menu.html"; // Ganti sesuai nama file tujuan
+    }
+  </script>
+</body>
+
+</html>
