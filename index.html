@@ -25,7 +25,7 @@
         </div>
 
         <div class="input-group">
-          <select required>
+          <select id="role" required>
             <option value="" disabled selected>Role</option>
             <option value="siswa">Siswa</option>
             <option value="guru">Guru</option>
@@ -38,14 +38,24 @@
     </div>
   </div>
 
-  <!-- Script untuk pindah halaman -->
   <script>
     function handleLogin(event) {
-      event.preventDefault(); // Mencegah reload
-      // Validasi bisa ditambahkan di sini kalau perlu
-      window.location.href = "menu.html"; // Ganti sesuai nama file tujuan
+      event.preventDefault(); // Mencegah reload halaman
+
+      // Ambil nilai role
+      const role = document.getElementById('role').value;
+
+      // Arahkan ke halaman sesuai role
+      if (role === "siswa") {
+        window.location.href = "menu.html";
+      } else if (role === "guru") {
+        window.location.href = "dashboardguru.html";
+      } else if (role === "admin") {
+        window.location.href = "admin_dashboard.html";
+      } else {
+        alert("Silakan pilih role terlebih dahulu.");
+      }
     }
   </script>
 </body>
-
 </html>
